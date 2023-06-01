@@ -5,6 +5,7 @@ specifiers:
   '@types/react': 18.2.7
   '@types/react-dom': 18.2.4
   autoprefixer: 10.4.14
+  crypto: ^1.0.1
   eslint: 8.41.0
   eslint-config-next: 13.4.4
   next: 13.4.4
@@ -19,6 +20,7 @@ dependencies:
   '@types/react': 18.2.7
   '@types/react-dom': 18.2.4
   autoprefixer: 10.4.14_postcss@8.4.24
+  crypto: 1.0.1
   eslint: 8.41.0
   eslint-config-next: 13.4.4_opaykosi7ysrbskpnffskmbrki
   next: 13.4.4_biqbaboplfbrettd7655fr4n2y
@@ -648,6 +650,11 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
+    dev: false
+
+  /crypto/1.0.1:
+    resolution: {integrity: sha512-VxBKmeNcqQdiUQUW2Tzq0t377b54N2bMtXO/qiLa+6eRRmmC4qT3D4OnTGoT/U6O9aklQ/jTwbOtRMTTY8G0Ig==}
+    deprecated: This package is no longer supported. It's now a built-in Node module. If you've depended on crypto, you should switch to the one that's built-in.
     dev: false
 
   /cssesc/3.0.0:
