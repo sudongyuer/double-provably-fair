@@ -4,20 +4,20 @@ import crypto from "crypto";
 
 const TILES = [
   { number: 0, color: "white" },
-  { number: 11, color: "black" },
-  { number: 5, color: "red" },
-  { number: 10, color: "black" },
-  { number: 6, color: "red" },
-  { number: 9, color: "black" },
-  { number: 7, color: "red" },
-  { number: 8, color: "black" },
-  { number: 1, color: "red" },
-  { number: 14, color: "black" },
-  { number: 2, color: "red" },
-  { number: 13, color: "black" },
-  { number: 3, color: "red" },
-  { number: 12, color: "black" },
-  { number: 4, color: "red" }
+  { number: 11, color: "blue" },
+  { number: 5, color: "pink" },
+  { number: 10, color: "blue" },
+  { number: 6, color: "pink" },
+  { number: 9, color: "blue" },
+  { number: 7, color: "pink" },
+  { number: 8, color: "blue" },
+  { number: 1, color: "pink" },
+  { number: 14, color: "blue" },
+  { number: 2, color: "pink" },
+  { number: 13, color: "blue" },
+  { number: 3, color: "pink" },
+  { number: 12, color: "blue" },
+  { number: 4, color: "pink" }
 ];
 
 export default function Home() {
@@ -34,7 +34,6 @@ export default function Home() {
     );
   }
 
-  // the hash of bitcoin block 570120 (https://medium.com/@blazedev/blaze-com-double-seeding-event-d3290ef13454)
   const clientSeed =
       "00000000000000000004172a4be28d9cdf7e5e36836f1fc6a106ae73266bf47a";
 
