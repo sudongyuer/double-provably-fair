@@ -68,18 +68,18 @@ export default function Home() {
             </thead>
             <tbody>
               {chain.map((seed, index) => {
-                const hash = crypto
-                  .createHmac("sha256", seed)
-                  .update(clientSeed)
-                  .digest("hex");
-                console.log(hash);
-                // roulette number from 0-15
-                const result = parseInt(hash.slice(0, 13), 16) % 15;
-                console.log(result);
+                  function getHashAndResult() {
+                      const hash = crypto
+                          .createHmac("sha256", seed)
+                          .update(clientSeed)
+                          .digest("hex");
+                      const result = parseInt(hash.slice(0, 13), 16) % 15;
+                      const tile = TILES.find((t) => t.number === result);
+                      return {hash, result, tile};
+                  }
 
-                const tile = TILES.find((t) => t.number === result);
-
-                return (
+                  const {hash, result, tile} = getHashAndResult();
+                  return (
                   <tr key={index}>
                     <td style={{ color: tile?.color }}>
                       {tile!.color.slice(0, 1).toUpperCase() +
